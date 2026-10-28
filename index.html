@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gdrive-cli</title>
+<meta name="description" content="gdrive-cli — a personal command-line tool to upload files to your own Google Drive and share them by link.">
+<style>
+  :root { --bg: #fbfbf9; --fg: #1d1f21; --muted: #5b6168; --line: #e3e3de; --accent: #1a6b54; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #16181a; --fg: #e8e8e4; --muted: #a2a8ae; --line: #2c3033; --accent: #6cc3a3; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.15rem; margin: 36px 0 8px; }
+  p, li { color: var(--fg); }
+  .sub { color: var(--muted); margin-top: 0; }
+  code { background: color-mix(in srgb, var(--line) 60%, transparent); padding: 1px 6px; border-radius: 4px; font-size: 0.92em; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+  footer { color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>gdrive-cli</h1>
+  <p class="sub">A personal command-line tool for Google Drive.</p>
+
+  <p><strong>gdrive-cli</strong> runs on your own computer. It uploads files and folders you choose to
+  <em>your own</em> Google Drive, sets them to “anyone with the link can view” so you can share the links,
+  lists them, and downloads them back. There is no server: the tool talks directly to the Google Drive API
+  from your machine.</p>
+
+  <h2>What it can access</h2>
+  <p>It requests a single permission, <code>https://www.googleapis.com/auth/drive.file</code>, which only lets it
+  see and manage the files and folders <strong>it created itself</strong>. It cannot read any other file in your Drive,
+  your Gmail, or your contacts.</p>
+
+  <h2>Privacy</h2>
+  <p>See the <a href="privacy.html">privacy policy</a>. In short: nothing is collected by the developer; your sign-in
+  token stays on your computer.</p>
+
+  <hr>
+
+  <h2 lang="vi">Tiếng Việt</h2>
+  <p lang="vi"><strong>gdrive-cli</strong> là công cụ dòng lệnh chạy trên máy của bạn: đẩy file/thư mục bạn chọn lên
+  <em>Google Drive của chính bạn</em>, đặt chế độ “ai có link đều xem được” để chia sẻ, liệt kê và tải về.
+  Không có máy chủ trung gian. Công cụ chỉ xin quyền <code>drive.file</code> — chỉ thấy và quản lý file do chính nó
+  tạo, không đọc được file khác trong Drive. Xem <a href="privacy.html">chính sách quyền riêng tư</a>.</p>
+
+  <hr>
+  <footer>Questions or issues: <a href="https://github.com/luzart-technology/gdrive-cli-site/issues">GitHub issues</a>.</footer>
+</main>
+</body>
+</html>
